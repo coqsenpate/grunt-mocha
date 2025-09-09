@@ -1,6 +1,6 @@
 {
   "name": "grunt-mocha2025",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A barebone mocha test runner for grunt.",
   "keywords": [
     "grunt",
