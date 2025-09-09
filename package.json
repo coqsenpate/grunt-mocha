@@ -1,0 +1,26 @@
+{
+  "name": "grunt-mocha2025",
+  "version": "0.0.1",
+  "description": "A barebone mocha test runner for grunt.",
+  "keywords": [
+    "grunt",
+    "mocha",
+    "test",
+    "nodejs",
+    "node"
+  ],
+  "homepage": "https://github.com/coqsenpate/grunt-mocha#readme",
+  "bugs": {
+    "url": "https://github.com/coqsenpate/grunt-mocha/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/coqsenpate/grunt-mocha.git"
+  },
+  "license": "MIT",
+  "author": "Nicolas Leclerc",
+  "type": "commonjs",
+  "peerDependencies": {
+    "mocha": ">=11"
+  }
+}
