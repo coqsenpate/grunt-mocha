@@ -9,11 +9,6 @@ const DEFAULT_OPTIONS = {
 module.exports = function(grunt) {
 	grunt.registerMultiTask('mocha2025', 'Run node unit tests with Mocha', function() {
 		const done = this.async()
-		if (this.filesSrc.length == 0) {
-			grunt.log.writeln('No files to check...')
-			done()
-			return
-		}
 
 		const options = {
 			...DEFAULT_OPTIONS,
