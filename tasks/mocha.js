@@ -8,6 +8,7 @@ const DEFAULT_OPTIONS = {
 
 module.exports = function(grunt) {
 	grunt.registerMultiTask('mocha2025', 'Run node unit tests with Mocha', function() {
+		const originalCwd = process.cwd()
 		const done = this.async()
 
 		const options = {
@@ -24,6 +25,9 @@ module.exports = function(grunt) {
 			mocha.addFile(file)
 		}
 
-		mocha.run((failures)=> done(!failures))
+		mocha.run((failures) => {
+			process.chdir(originalCwd) // In case it's been changed during testing.
+			done(!failures)
+		})
 	})
 }
